@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,640;0,900;1,100;1,300;1,400;1,640;1,900&family=Philosopher:ital,wght@0,400;0,640;1,400;1,640&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <title>YouTube</title>
+</head>
+
+<body class="bg-neutral-950 text-stone-50 font-roboto">
+    <nav class="sticky top-0 bg-neutral-950 p-2 flex items-center justify-between w-full">
+        <div class="cursor-pointer flex items-center px-5 py-1 text-white">
+            <img src="logo.svg" alt="">
+        </div>
+        <div class="flex justify-center ">
+            <div class="search-box relative w-full">
+                <input type="text"
+                    class="w-full pr-16 bg-neutral-950 rounded-full px-4 py-2 border border-neutral-700 focus:border-blue-500 focus:outline-none "
+                    placeholder="Search">
+
+                <button
+                    class="absolute right-0 top-0 bottom-0 bg-neutral-800 px-5 cursor-pointer rounded-r-full hover:bg-stone-640">
+                    <i class="fa-solid fa-magnifying-glass opacity-80"></i>
+                </button>
+            </div>
+            <div>
+                <button class="bg-neutral-800 cursor-pointer rounded-full p-2 w-10 h-10 mx-4 hover:bg-stone-640">
+                    <i class="fa-solid fa-microphone opacity-80"></i>
+                </button>
+            </div>
+        </div>
+        <div class="flex justify-between">
+            <div>
+                <button class="cursor-pointer rounded-full p-2 w-10 h-10 mx-4 hover:bg-stone-800">
+                    <i class="fa-regular fa-bell opacity-80"></i>
+                </button>
+            </div>
+            <div>
+                <button class="cursor-pointer rounded-full p-0 w-10 h-10 mx-4 hover:bg-stone-800">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="p-2 flex gap-1">
+        <div class="sticky top-[65px] left-0 bg-neutral-950 h-full w-18 mr-2">
+            <div class="flex flex-col items-center cursor-pointer py-5 justify-center rounded-[10px] hover:bg-neutral-800">
+                <div class=" ">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="font-thin text-[12px]">
+                    Home
+                </div>
+            </div>
+            <div class="flex flex-col items-center cursor-pointer px-2 py-5 justify-center rounded-[10px] hover:bg-neutral-800">
+                <div class=" ">
+                    <img src="shorts.svg" alt="">
+                </div>
+                <div class="font-thin text-[12px]">
+                    Shorts
+                </div>
+            </div>
+            <div class="flex flex-col items-center cursor-pointer px-2 py-5 justify-center rounded-[10px] hover:bg-neutral-800">
+                <div class=" ">
+                    <img src="subscriptions.svg" alt="">
+                </div>
+                <div class="font-thin text-[12px]">
+                    Subscriptions
+                </div>
+            </div>
+            <div class="flex flex-col items-center cursor-pointer px-2 py-5 justify-center rounded-[10px] hover:bg-neutral-800">
+                <div class=" ">
+                    <img src="you.svg" alt="">
+                </div>
+                <div class="font-thin text-[12px]">
+                    You
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="sticky top-[56px] left-0 bg-neutral-950 mb-4 py-1 flex text-sm text-neutral-50 font-semibold">
+                <button
+                    class="mr-3 px-[13px] py-[5px] rounded-lg bg-neutral-800 focus:bg-neutral-300 focus:text-neutral-950 cursor-pointer">
+                    <div class="">
+                        All
+                    </div>
+                </button>
+                <button
+                    class="mr-3 px-[13px] py-[5px] rounded-lg bg-neutral-800 focus:bg-neutral-300 focus:text-neutral-950 cursor-pointer">
+                    <div class="">
+                        Music
+                    </div>
+                </button>
+            </div>
+
+            <div class="contents grid grid-cols-4 gap-x-3 gap-y-5 w-full">
+                <div class=" h-[220px] rounded-lg ">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/E_oVCq-af3U?si=jZlFm4fgiMAsEtHl"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+                <div class=" h-[220px] rounded-lg ">
+                    <iframe class="h-full w-full " src="https://www.youtube.com/embed/KC-NOkm-dGs?si=YLHNn4KoomBT7Zmp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class=" h-[220px] rounded-lg ">
+                    <iframe class="h-full w-full " src="https://www.youtube.com/embed/rD28QWzMeDY?si=sfo88H_M3vqW75m6"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class=" h-[220px] rounded-lg ">
+                    <iframe class="h-full w-full " src="https://www.youtube.com/embed/KC-NOkm-dGs?si=YLHNn4KoomBT7Zmp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class=" h-[220px] rounded-lg ">
+                    <iframe class="h-full w-full " src="https://www.youtube.com/embed/KC-NOkm-dGs?si=YLHNn4KoomBT7Zmp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class=" h-[220px] rounded-lg ">
+                    <iframe class="h-full w-full " src="https://www.youtube.com/embed/KC-NOkm-dGs?si=YLHNn4KoomBT7Zmp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class=" h-[220px] rounded-lg ">
+                    <iframe class="h-full w-full " src="https://www.youtube.com/embed/KC-NOkm-dGs?si=YLHNn4KoomBT7Zmp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class=" h-[220px] rounded-lg ">
+                    <iframe class="h-full w-full " src="https://www.youtube.com/embed/KC-NOkm-dGs?si=YLHNn4KoomBT7Zmp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class=" h-[220px] rounded-lg ">
+                    <iframe class="h-full w-full " src="https://www.youtube.com/embed/KC-NOkm-dGs?si=YLHNn4KoomBT7Zmp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
